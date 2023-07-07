@@ -14,7 +14,7 @@ promptOne();
 
 function promptOne() {
   var passwordLength = prompt("Please input your desired lenth of password between the numbers of 8 and 128.", 12);
-
+//Default number is 12 and made sure that user's input number is read by the script as a number
   if (passwordLength >= 8 && passwordLength <= 128) {
     passwordLengthNumber = parseInt(passwordLength);
     console.log(passwordLengthNumber);
@@ -29,7 +29,7 @@ function promptOne() {
 
 function promptTwo() {
   var useLowers = prompt("Use lowercase letters? (Yes or No)", "Yes").toLowerCase();
-
+//Default value is yes for the prompt; users can answer yes, no, y, n in any caplization
   if (useLowers === "yes" || useLowers === "y") {
     console.log(lowers);
     promptThree();
@@ -47,7 +47,7 @@ function promptTwo() {
 
 function promptThree() {
   var useUppers = prompt("Use UPPERCASE letters? (Yes or No)", "Yes").toLowerCase();
-
+//Default value is yes for the prompt; users can answer yes, no, y, n in any caplization
   if (useUppers === "yes" || useUppers === "y") {
     console.log(uppers);
     promptFour();
@@ -65,7 +65,7 @@ function promptThree() {
 
 function promptFour() {
   var useNumbers = prompt("Use numbers? (Yes or No)", "Yes").toLowerCase();
-
+//Default value is yes for the prompt; users can answer yes, no, y, n in any caplization
   if (useNumbers === "yes" || useNumbers === "y") {
     console.log(numbers);
     promptFive();
@@ -83,7 +83,7 @@ function promptFour() {
 
 function promptFive() {
   var useSpecials = prompt("Use special characters? (Yes or No)", "Yes").toLowerCase();
-
+//Default value is yes for the prompt; users can answer yes, no, y, n in any caplization
   if (useSpecials === "yes" || useSpecials === "y") {
     console.log(specials);
     criteriaCheck()
@@ -113,7 +113,7 @@ function criteriaCheck() {
     generatePassword();
   } else {
     createPassword();
-
+//There are two parts of the password; passwordRequired and passwordRemainder; the passwordRequired makes sure that atleast one of each selected criteria character is in the password
     function createPassword() {
       if (lowers.length !== 0) {
         var randomLower = lowers[Math.floor(Math.random() * lowers.length)];
@@ -147,8 +147,9 @@ function criteriaCheck() {
       for (var i = 0; i < (passwordLengthNumber - (passwordRequiredChar.length)); i++) {
         var randomSetup = Math.floor(Math.random() * masterCharacters.length);
         
-        console.log(randomSetup);
         passwordRemainder += masterCharacters.substring(randomSetup, randomSetup +1);
+//the creation of the remainding part of the password after passwordRequired by looping a random character being selected with additional ones being added to the previous one
+        console.log(randomSetup);
         console.log(passwordRemainder);
       }
 
