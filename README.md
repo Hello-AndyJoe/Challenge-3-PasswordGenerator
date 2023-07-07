@@ -10,7 +10,7 @@ This web application is designed for users to generate a password using criteria
 ## Installation
 
 
-There is no Installation involved on the users side to utilize this webpage; just visit [https://hello-andyjoe.github.io/Develop/Challenge-3](https://hello-andyjoe.github.io/Develop/Challenge-3)
+There is no Installation involved on the users side to utilize this webpage; just visit [https://hello-andyjoe.github.io/Challenge-3-PasswordGenerator/](https://hello-andyjoe.github.io/Challenge-3-PasswordGenerator/)
 
 
 ## Usage
@@ -18,7 +18,7 @@ There is no Installation involved on the users side to utilize this webpage; jus
 
 To use this site, click the red button "Generate Password" and a prompt will appear towards the upper portion of the browser's window asking for users to input a number. Once, they input a number, it will move on to a series of prompts asking to Yes or No questions as to what characters they want to be used in their password. In the event that the use input invalid responses, such as a nonnumber for the password legnth or something other that yes or no for the other questions, it will alert the user and ask them again to input a reponse. If all four yes or no questions are answered with no, then the user will get an alert that they cannot anwser no to all of the questions and will have to run through the criteria again. If a user answers the various prompts with valid reponses, they will get an alert that has the generated password.
 
-Additionally, the console can be opened to see various steps that the javascript is taking to generate the password due to console.log methods in the browser inspector.
+Additionally, the console can be opened to see various steps that the javascript is taking to generate the password due to console.log methods in the browser inspector. This was also used for troublshooting.
 
 
 ## Credits
