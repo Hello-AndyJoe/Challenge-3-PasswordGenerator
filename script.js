@@ -154,8 +154,6 @@ function criteriaCheck() {
       }
 
       myGeneratedPassword = passwordRequiredChar + passwordRemainder;
-
-      alert("Your password is as follows:\n\n" + myGeneratedPassword);
       }
     }
   }
